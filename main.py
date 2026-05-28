@@ -150,8 +150,7 @@ def detect_faces(frame, detect_width):
                 if name not in session_attendance:
                     session_attendance[name] = {"in": current_time}
 
-                accuracy = similarity * 100
-                display_text = f"{name} ({accuracy:.2f}%)"
+                display_text = name
                 box_color = (0, 255, 0)
             else:
                 display_text = ""
