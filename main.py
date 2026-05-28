@@ -36,7 +36,7 @@ today = datetime.now().strftime("%Y-%m-%d")
 csv_filename = f"attendance_{today}.csv"
 
 # Connect to RTSP stream 
-rtsp_url = "rtsp://admin:@dmin456@192.168.18.3:554/Streaming/Channels/101"
+rtsp_url = "rtsp://admin:@dmin456@192.168.1.69:554/Streaming/Channels/101"
 cap = cv2.VideoCapture(rtsp_url)
 
 while cap.isOpened():
